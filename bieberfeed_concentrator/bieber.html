@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <title>BieberFeed</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bieber.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-fixed-top" role="navigation" style="background-color: white">
+  <div class="container-fluid col-md-offset-1">
+    <ul class="nav navbar-nav col-md-6">
+      <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+  		 <li><a href="#"><span class="glyphicon glyphicon-flash"></span> Moment</a></li>
+  		 <li><a href="#"><span class="glyphicon glyphicon-bell"></span> Notification</a></li>
+  		 <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Messages</a></li>
+         
+    </ul>
+    <div class="col-md-2">
+   	  <button type="button" class="btn btn-info navbar-btn" id="goToTop"><span class="glyphicon glyphicon glyphicon-menu-up" ></span></button>
+    </div>
+    
+    <form class="navbar-form navbar-left">
+      <div class="form-group has-feedback">
+           <label class="sr-only control-label" for="search">Search</label>
+            <input type="text" class="form-control" id="search" placeholder="Search Twitter">
+            <span class="glyphicon glyphicon-search form-control-feedback" ></span>
+          </div>
+    </form>
+  </div>
+</nav>
+
+ <div class="container-fluid" style="margin-top: 80px;">
+ 	<div class="col-md-3"id="profile">
+      <div>
+      	 <img src="img/profile.jpg">
+      </div>
+		<h3>Jastin Bieber</h3>
+		<span style="color:darkgrey;font-size:12pt">@justinbieber</span>
+		<p>Let's make the world better. Join me on @bkstg at 'justinbieber'. COLD WATER and LET ME LOVE YOU out now. OUR new album PURPOSE out NOW</p>
+    </div>
+    <div class="col-md-7" id="container">
+   	 <h2>BieberFeed</h2>
+     <h5>Waiting</h5>
+     <ul id="tweets"></ul>
+   </div>
+   <div class="col-md-2">
+   	  <button type="button" class="btn btn-warning" id="control">
+		  <label><input type="checkbox" id="stop" onClick="check()"> Stop refresh</label>
+   	  </button>
+   </div>  
+ </div>
+   
+   
+   
+    
+</body>
+</html>
