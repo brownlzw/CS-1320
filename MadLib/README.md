@@ -1,0 +1,1 @@
+To start, please follow steps below:1. Uncompress Lab4 zip file.2. In terminal, cd to Lab4 folder which was just uncompressed.3. Run **npm start**.4. Open browser, visit [link]http://localhost:8080/5. Enjoy the game!
