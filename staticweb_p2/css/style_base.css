@@ -1,0 +1,272 @@
+/* ===============================================
+========== USE @font-face to load fonts ==========
+==================================================*/
+
+/*These are all of the custom fonts you will have to link.*/
+@font-face {
+font-family:"ff-dagny-web-pro-1";
+src:url("../fonts/DagnyWebPro.eot");
+}
+
+@font-face {
+font-family:"ff-dagny-web-pro-light";
+src:url(../fonts/DagnyWebPro-Xlight.woff) format("woff");
+}
+
+@font-face {
+font-family:"ff-dagny-web-pro-2";
+src:url(../fonts/DagnyWebPro.woff) format("woff");
+}
+
+@font-face {
+font-family:"ff-dagny-web-pro-bold";
+src:url(../fonts/DagnyWebPro-Bold.woff) format("woff");
+}
+
+/* ===============================================
+================ Some TA styling… ================
+==================================================*/
+
+/*The general width of the layout; scrollbars will appear if window is less wide.*/
+body{
+min-width:1040px;
+	margin: 0 auto;
+}
+
+/*Take note of how to apply use of a custom font*/
+h1,h2,h3,h4,h5,p {
+padding:0;
+margin:0;
+font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#header_wrapper{
+	background-image: url(../images/bg_header.gif);
+	position: fixed;
+	top:0px;
+	left:0px;
+	height: 59px;
+	width:100%;
+}
+#logo{
+	float: left;
+	width:25%;
+	height: 100%;
+	overflow: auto;
+	
+}
+#logo a{
+	display: inline-block;
+	margin-left: 35%;
+	margin-top:-50px;
+	width:160px;
+	background-image: url(../images/logo.png);
+	text-indent: -999em;	
+}
+ul#top_nav{
+	display: inline-block;
+	margin-top: 0px;
+	overflow: auto;
+}
+
+ul#top_nav li {
+	display: inline-block;
+	list-style: none;
+	text-indent: -999em;
+	text-decoration: none;
+	background-image: url(../images/navigation.png);
+	height: 59px;
+}
+#nav_features {
+	width: 90px;
+	background-position: 0 0;
+}
+#nav_features:hover{
+	background-position: 0 -59px;	
+}
+#nav_pricing{
+	width: 80px; 
+	background-position: -91px 0;
+}
+#nav_pricing:hover{ 
+	background-position: -91px -59px;
+}
+#nav_add-ons{
+	width: 90px; 
+	background-position: -172px 0;
+}
+#nav_add-ons:hover{
+	background-position: -172px -59px;
+}
+#nav_customers{
+	width: 105px; 
+	background-position: -437px 0;
+}
+#nav_customers:hover{
+	background-position: -437px -59px;
+}
+#nav_about{
+	width: 72px; 
+	background-position: -263px 0;
+}
+#nav_about:hover{ 
+	background-position: -263px -59px;
+}
+#nav_blog{
+	width: 65px;
+	background-position: -543px 0;
+}
+#nav_blog:hover{
+	background-position: -543px -59px;
+}
+#top_container{
+	width:100%;
+	margin:0 0;
+	padding-top: 59px;
+}
+#picture_panel{
+	background-image:url(../images/bg_pattern.png);
+	overflow: auto;
+}
+#picture_panel h2{
+	text-align: center;
+	color: white;
+	font-size: 32px;
+	font-weight:normal;
+	padding-top: 30px;
+	padding-bottom: 25px;
+}
+.home_icons{
+	display: flex;
+	justify-content: center;
+}
+.icon_column{
+	width:280px;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 3%;
+}
+.icon_column h3{
+	color:white;
+	font-size: 20px;
+	margin-bottom: 2%;
+}
+.icon_column p{
+	color:#E4E2E2;
+	font-size: 15px;
+}
+.learn_more{
+	display: inline-block;
+	margin-top: 4%;
+	margin-bottom: 1%;
+	margin-left: auto;
+	width: 83px;
+	height: 20px;
+	background-image: url(../images/learn-more.png);
+	background-position: 0 0;
+	text-indent: -999em;	
+}
+.learn_more:hover{
+	background-position: 0 100%;
+}
+#sign-up_button-panel{
+	display: flex;
+	justify-content: center;
+	background-color:#242424;
+	color:white;
+	overflow: auto;
+	height:12%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#sign-up_button-panel h4{
+	float: left;
+    margin-top: 15px;
+	width:34%;
+	text-align: center;
+	height: 30px;
+    line-height: 30px;
+	
+}
+#sign-up_button-panel a{
+	float: left;
+	width: 268px;
+	height: 57px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-image: url(../images/cta.png);
+	background-position: 0;
+	text-indent: -999em;
+}
+#sign-up_button-panel a:hover{
+	background-position: 100%;
+}
+#page-content{
+	padding-bottom: 5%;
+}
+#left-panel-float{
+	float:left;
+	padding-top:3%;
+	padding-bottom: 12%;
+	padding-right: 11%;	
+}
+
+#left-panel-float h2{
+	width: 89%;
+	padding-left: 15%;
+}
+#left-panel-float ul li{
+	padding-bottom: 2px;
+	list-style: none;
+}
+#left-panel-float li a{
+	color:#FD5900;
+	
+}
+
+#right-panel-content{
+	width: 57%;
+	display: inline-block;
+	padding-top:3%;
+	padding-left: 2%;
+	background-image: url(../images/bg_home_right.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#right-panel-content h3{
+	padding-bottom: 2%;
+}
+#right-panel-content p{
+	padding-left: 2%;
+	padding-bottom: 3%;
+	font-size: 11pt;
+}
+#footer_nav{
+	width: 100%;
+	background-image: url(../images/bg_footer.gif);
+	background-size: contain;
+	overflow: auto;
+	text-align: center;
+}
+#footer_nav ul{
+	width: 50%;
+	height: 100%;
+	margin-left: 25%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style: none;
+}
+#footer_nav_wrapper li{
+	display: inline-block;
+	height:100%;
+	margin-left: 5%
+}
+#footer_nav_wrapper a{
+	text-decoration: none;
+	color: #7A7878;font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-weight: 900;
+	font-size: 9pt;
+	text-transform: uppercase;
+}
