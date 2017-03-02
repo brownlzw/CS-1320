@@ -1,0 +1,115 @@
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+
+/* Basic */
+
+	body, input, select, textarea {
+		color: white;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 15pt;
+		font-weight: 300 !important;
+		letter-spacing: -0.05em;
+		line-height: 1.75em;
+	}
+
+/* BG */
+    @-moz-keyframes bg { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-webkit-keyframes bg { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-o-keyframes bg { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@keyframes bg { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+	body {
+		-moz-animation: bg 2s linear;
+		-webkit-animation: bg 2s linear;
+		-o-animation: bg 2s linear;
+		animation: bg 2s linear;
+		height: 100%;
+	    width: 100%;
+	    background-image: url(images/bg-02.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+
+	a {
+		color: inherit;
+		outline: 0;
+		text-decoration: none;
+	}
+#nav{
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	height: 15%;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	z-index: 999;
+	color:#908C8C;
+	
+}
+#nav ul{
+    display:inline-block;
+	margin:0 auto; 
+	background-color:rgba(255,255,255,0.8);
+	line-height: 70px;
+	width: 80%;
+	list-style: none;
+	overflow:auto;
+	
+}
+#nav ul li{
+	display: inline-block;
+	padding: 0 2%;
+	
+}
+#nav a{
+	font-size: 15pt;
+}
+#nav a:hover{
+	color: aqua;
+	font-size: 17pt;
+}
+.current a{
+	border-bottom: dotted 2px;
+}
+
+.main {
+	    display: block;
+	    position: absolute;
+	    top:0px;
+	    left: 0px;
+	    width: 100%;
+	    margin: 0;
+	    overflow:scroll; 
+	    text-align: center;
+	}
+.content{
+	width: 65%;
+	background-color: rgba(255,255,255,0.25);
+	color: black;
+	margin-top: 8%;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: normal;
+}
+.title{
+	padding-top: 2%;
+	font-size: 24pt;
+	font-weight: 500;
+}
+.content p{
+	margin: 2% 5% 0 5%;
+	font-size: 13pt;
+	
+}
+.content a{
+	color: blue;
+	text-decoration: underline;
+	
+}
+.content a:hover{
+	font-size: 16pt;
+}
+.content a:visited{
+	color:#A64CBE;
+}
