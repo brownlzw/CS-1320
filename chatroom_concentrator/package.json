@@ -1,0 +1,22 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "assignment 3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Zhengwei Liu",
+  "license": "ISC",
+  "dependencies": {
+    "any-db": "^2.1.0",
+    "any-db-sqlite3": "^2.1.4",
+    "body-parser": "^1.17.1",
+    "consolidate": "^0.14.5",
+    "express": "^4.15.2",
+    "hogan": "^1.0.2",
+    "mustache": "^2.3.0",
+    "uuid": "^3.0.1"
+  }
+}
