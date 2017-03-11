@@ -7,4 +7,4 @@ My works mainly include:
 * Implemented a templating engine to process some HTMLs written by Mustache, a templating language, and adapt the templating engines so that they work directly with Express via the consolidate library and Hogan, Twitter's node implementation of Mustache
 * Created and maintained a database that stores information of messages( room, nickname, message, time etc.) through any-db module with SQLite3, and updated the content of web pages by SQL queries
 
-Note: All the npm package is saved in the package.json file
+####Note: All the npm package is saved in the package.json file
