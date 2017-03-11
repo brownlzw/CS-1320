@@ -1,6 +1,6 @@
 README
 ======
-###BieberFeed, a tool for displaying a streaming list of Tweets posted about Justin Bieber. Every second, there are nearly 50 new Tweets published about Justin Bieber. It can be quite harrowing to keep track of all of them on Twitter itself, so my goal is to find a way to separate the proverbial wheat from the chaff. 
+BieberFeed, a tool for displaying a streaming list of Tweets posted about Justin Bieber. Every second, there are nearly 50 new Tweets published about Justin Bieber. It can be quite harrowing to keep track of all of them on Twitter itself, so my goal is to find a way to separate the proverbial wheat from the chaff. 
 
 My works mainly include three parts:
 ------
