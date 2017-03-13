@@ -4,9 +4,13 @@ html,body{
     height: 100%;
     width: 100%;
 }
+#back{
+  margin-top: 1%;
+  width:20%;
+}
 .alert{
   margin-top: 10%;
-  width:70%;
+  width:60%;
   height:10%;
   text-align: center;
 }
@@ -186,9 +190,15 @@ width: 40px;
 .chat_area .chat-body1 {
 margin-left: 50px;
 }
-.chat-body1 p {
-background: #fbf9fa none repeat scroll 0 0;
-padding: 10px;
+.chat-other {
+background: #6196ed none repeat scroll 0 0;
+padding: 10px 20px;
+border-radius: 20px;
+}
+.chat-self {
+background: #a2e25d none repeat scroll 0 0;
+padding: 10px 20px;
+border-radius: 20px;
 }
 .chat_area .admin_chat .chat-body1 {
 margin-left: 0;
