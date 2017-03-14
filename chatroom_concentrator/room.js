@@ -9,7 +9,7 @@ $(document).ready(function(){
   $('.alert strong').text(name)
   nickname = window.prompt("Create a nickname for yourself")
   window.addEventListener('load', function(){
-    intervalId = window.setInterval(refresh,8000)
+    intervalId = window.setInterval(refresh,5000)
   }, false);
   var messageForm = $('#messageForm').submit(sendMessage);
 
