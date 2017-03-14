@@ -1,5 +1,5 @@
 
-> Remember the early 2000s when chatting with buddies on AIM was all the rage? Now, communicating with people over any website is almost always a given. This project realizes virtual communication and RESTful web services by building a basic chatroom.
+Remember the early 2000s when chatting with buddies on AIM was all the rage? Now, communicating with people over any website is almost always a given. This project realizes virtual communication and RESTful web services by building a basic chatroom.
 
 My works mainly include:
 -----
