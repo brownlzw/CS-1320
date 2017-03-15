@@ -46,7 +46,6 @@ function getRooms(req,res){
         res.json(result.rows)
       }
   })
-
 }
 
 function createRoom(req,res){
@@ -60,7 +59,6 @@ function createRoom(req,res){
 function gotoRoom(req, res){
   // do any work you need to do, then
   var sql = 'SELECT MIN(time) AS mintime FROM message WHERE room=$1'
-
   conn.query(sql,[req.params.roomName],function(error,result){
     if(error){
       console.log(error);
@@ -69,9 +67,11 @@ function gotoRoom(req, res){
       var now = new Date().getTime()
       var time = row[0].mintime||parseInt(now)
       res.render('room.html', {roomName: req.params.roomName,time:time});
-      console.log(time);
+      console.log(new Date(time).toLocaleString())
     }
   })
+
+
 }
 
 function getMessage(req,res){
@@ -86,12 +86,13 @@ function getMessage(req,res){
   // encode the messages object as JSON and send it back
 }
 
-function saveMessage(request, response) {
-  var roomName = request.params.roomName
-  var nickname = request.body.nickname
-  var message = request.body.message
+function saveMessage(req, res) {
+  var roomName = req.params.roomName
+  var nickname = req.body.nickname
+  var message = req.body.message
   var now = new Date().getTime()
   insert(roomName,nickname,message,parseInt(now))
+  res.end()
 }
 
 function insert(roomName,nickname,message,time){

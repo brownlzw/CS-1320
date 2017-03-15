@@ -189,16 +189,17 @@ width: 40px;
 }
 .chat_area .chat-body1 {
 margin-left: 50px;
+font-size: 15px;
 }
 .chat-other {
 background: #6196ed none repeat scroll 0 0;
 padding: 10px 20px;
-border-radius: 20px;
+border-radius: 15px;
 }
 .chat-self {
 background: #a2e25d none repeat scroll 0 0;
 padding: 10px 20px;
-border-radius: 20px;
+border-radius: 15px;
 }
 .chat_area .admin_chat .chat-body1 {
 margin-left: 0;

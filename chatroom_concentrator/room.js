@@ -4,7 +4,7 @@ var roomName = meta('roomName')
 var name = roomName.substr(0,8);
 var lasttime = parseInt(meta('create-time'))
 
-console.log(lasttime);
+console.log(new Date(lasttime).toLocaleString());
 $(document).ready(function(){
   $('.alert strong').text(name)
   nickname = window.prompt("Create a nickname for yourself")
@@ -37,14 +37,14 @@ function refresh(){
         var username = data[i].nickname
         var message = data[i].body
         var date = new Date(data[i].time)
-        var time = date.toISOString().substring(5,19).replace('T',' ')
+        var time = date.toLocaleString().replace('\/(19|20)\d{2},','')
 				var li = $('<li></li>').addClass('left clearfix')
         var span1 = $('<span></span>').html('<img src="./photo.jpg" alt="User Avatar" class="img-circle">')
         var p0 = $('<p></p>').html('<strong>&nbsp;&nbsp;'+username+'</strong>&nbsp;&nbsp;<br>&nbsp;&nbsp;'+time+'&nbsp;&nbsp;').css('color','#8a8b8c')
         var p = $('<p></p>').text(message)
         if (username===nickname){
           span1.addClass('chat-img1 pull-right')
-          p0.addClass('text-right').css({'font-size':'13px','font-style':'italic'})
+          p0.addClass('text-right')
           p.addClass('chat-self pull-right ')
         } else{
           span1.addClass('chat-img1 pull-left')
