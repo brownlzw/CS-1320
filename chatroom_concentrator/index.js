@@ -16,7 +16,7 @@ $(document).ready(function(){
 function refresh(){
 	$.ajax({
 		type: "GET",
-		url: "http://localhost:8080/showrooms",
+		url: "/showrooms",
 		dataType: "json",
 		error: function(err,status){
 			console.log(status);
@@ -51,7 +51,7 @@ function getInterval(oldtime,newtime){
 function redirect(event){
 	$.ajax({
 		type: "GET",
-		url: "http://localhost:8080/room",
+		url: "/room",
 		dataType: "json",
 		error: function(err,status){
 			console.log('Get random roomName error!');

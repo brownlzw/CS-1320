@@ -26,7 +26,7 @@ function refresh(){
 	var ul = $('#message');
 	$.ajax({
 		type: "GET",
-		url: 'http://localhost:8080/'+roomName+'/messages',
+		url: '/'+roomName+'/messages',
     headers:{'time':lasttime},
 		dataType: "json",
 		// error: function(err,status){
