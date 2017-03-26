@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="fa-events-icons-ready">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="roomName" content="{{roomName}}">
+<head>
+<title>Room: {{roomName}}</title>
+</head>
+<link rel="stylesheet" href="../room.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src='../room.js'></script>
+<body>
+  <nav class="navbar well well-sm navbar-justfied">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-sm-3 navbar-btn">
+          <a href='/' type='button' id='back' class='center-block text-center'><span class="glyphicon glyphicon-home center-block"></span>Back to homepage</a>
+        </div>
+        <div class="navbar-brand col-sm-6  ">
+          <p id='header' class="text-center center-block clearfix" href="#">WebSiteName</p>
+        </div>
+        <div class="col-sm-3 navbar-brand text-center">
+          <strong>Welcome, <span id='username'></span></strong>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="main_section">
+    <div class="container">
+
+      <div class="col-sm-3 chat_sidebar">
+        <div class="row">
+          <div id='search-group'>
+            <div class="has-feedback center-block">
+              <input type="text" id='search' class="form-control">
+             <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+          </div>
+          <div class="panel panel-warning" style='margin-bottom:0px;'>
+            <div class="panel-heading">
+              <span id='membercount'></span>
+              <span id='status' accesskey=""class='glyphicon glyphicon-record pull-right online'></span>
+            </div>
+            <div class="member_list panel-body">
+              <ul id='members' class="list-unstyled">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+         <!--chat_sidebar-->
+      <div class="col-sm-7 message_section">
+        <div class="row">
+
+          <div class="new_message_head well" style='margin-bottom:0px;'>
+            <div class="pull-right">
+              <div class="dropdown">
+                <span class='glyphicon glyphicon-cog'></span>
+                <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-cogs" aria-hidden="true"></i>  Setting
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--new_message_head-->
+          <div class="chat_area" id="area">
+            <ul class="list-unstyled" id='message'>
+              </ul>
+          </div>
+          <!--chat_area-->
+          <div class="message_write">
+            <form id="messageForm">
+              <textarea form="messageForm" id="messageField" class='pull-left center-block' placeholder="type a message"></textarea>
+              <input id='submit' type="submit" value="Send" class="pull-right btn btn-success">
+            </form>
+          </div>
+
+        </div>
+      </div> <!--message_section-->
+
+    </div>
+  </div>
+</body>
+</html>
