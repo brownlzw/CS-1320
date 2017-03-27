@@ -13,21 +13,21 @@ The Chatroom has two kind of pages, some of the features are shown as follows:
 Features
 ------
 + Navbar 
-  +The back to home button is the left side
-  +Room name is shown in the middle
-  +On the right side, a welcome message along with your nickname, which can be changed easily by just clicking the nickname, inputing your new nickname, and **clicking any other place** in the page to commit the change 
+  - The back to home button is the left side
+  - Room name is shown in the middle
+  - On the right side, a welcome message along with your nickname, which can be changed easily by just clicking the nickname, inputing your new nickname, and **clicking any other place** in the page to commit the change 
 + Sidebar
-  +A count of total active member in this room
-  +A green/red button which can click to actively change your state(online/away)
-  +An connected member list, arranged by their most recent **active time** (active time will updated when a user join this room, change his/her nickname and send a message).
-  +The **last action and its time** of each active member. A typical action is a either a 'join this room'(or 'change nickname') or the first 24 letters of the most recent message. 
-  +The idle state of of each connected member.
+  - A count of total active member in this room
+  - A green/red button which can click to actively change your state(online/away)
+  - An connected member list, arranged by their most recent **active time** (active time will updated when a user join this room, change his/her nickname and send a message).
+  - The **last action and its time** of each active member. A typical action is a either a 'join this room'(or 'change nickname') or the first 24 letters of the most recent message. 
+  - The idle state of of each connected member.
 + Chat area
-  +All the message sent in this room, each with the header, nickname and send time on the top and message body wrapped by the round box below.
-  +**Different style** for the message sent by yourself(green,align right) and those send by others(cyan,align right)
-  +Grey, italic style 'notice' message send by the server whenever a user join,leave, change nickname. What's more magic and appealing is the 'typing' notice and 'away/come back' notice
+  - All the message sent in this room, each with the header, nickname and send time on the top and message body wrapped by the round box below.
+  - **Different style** for the message sent by yourself(green,align right) and those send by others(cyan,align right)
+  - Grey, italic style '**notice**' message send by the server whenever a user join,leave, change nickname. What's more magic and appealing is the 'typing' notice and 'away/come back' notice
 + Send area
-  +You can send message using either the send button or just press enter/return key.
+  - You can send message using either the send button or just press enter/return key.
 
 Highlights
 -----
