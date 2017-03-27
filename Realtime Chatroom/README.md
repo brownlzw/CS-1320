@@ -44,7 +44,7 @@ Instructions
 My works
 -----
 * Built a server and managed routes using Node.js and Express.js, and parsed post requests data from client side using body-parser package
-* Used Socket.io to handle different events(join/leave/change nickname/typing/stop typing/away/come back etc.), and to implement the communication between the client side and the server.
+* Used Socket.io to handle different events(join/leave/change nickname/typing/stop typing/away/come back etc.), and to realize the communication between the client side and the server.
 * Implemented a templating engine to process some HTMLs written by Mustache, a templating language, and adapt the templating engines so that they work directly with Express via the consolidate library and Hogan, Twitter's node implementation of Mustache
 * Created and maintained a database that stores information of messages( room, nickname, message, time etc.) through any-db module with SQLite3, and updated the content of web pages by SQL queries
 
