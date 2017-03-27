@@ -13,7 +13,7 @@ The Chatroom has two kind of pages, some of the features are shown as follows:
 Features
 ------
 + Navbar 
-  - The back to home button is the left side
+  + The back to home button is the left side
   - Room name is shown in the middle
   - On the right side, a welcome message along with your nickname, which can be changed easily by just clicking the nickname, inputing your new nickname, and **clicking any other place** in the page to commit the change 
 + Sidebar
