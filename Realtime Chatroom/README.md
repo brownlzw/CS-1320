@@ -13,7 +13,7 @@ The Chatroom has two kind of pages, some of the features are shown as follows:
 Features
 ------
 + Navbar 
-  + The back to home button is the left side
+  - The back to home button is the left side
   - Room name is shown in the middle
   - On the right side, a welcome message along with your nickname, which can be changed easily by just clicking the nickname, inputing your new nickname, and **clicking any other place** in the page to commit the change 
 + Sidebar
@@ -33,8 +33,8 @@ Highlights
 -----
 + Using **socketid** instead of nickname to distinguish different user, so that different user with the same name can be correctly recognized in the member list and chat area.
 + **Live type notification**(_"??? is typing..."_). When a user type something, this notification will remain for one more second after the typing stopped and then disappeared. Upon typing again, the notice will appear again. Again, due to the socketid strategy， even if two users with same nickname typing simultaneously， it will correctly show two notices.
-+ Implemented a complcated **idle time detect** mechanism. The active state button has the highest priority: when it's red(means the user clicks the button initiatively and wants to tell others he/she is away), all the other actions won't change the state. Apart from this case, a user will be recognized as away if he/she switch windows/tabs or with no mouse move/key press for 30s(this time can be changed according to the demand), and as back if he/she switch back to this page or move the mouse/press a key. Whenever a user is recongized as away or comeback, the server will emit a notice to other users in this room, and the button on the right side of his/her entry in the member list will change color accordingly.
-+ Always make the chat area slide to bottom.
++ Implemented a complcated **idle time detect** mechanism. The **active state button** has the **highest priority**: when it's red(means the user clicks the button initiatively and wants to tell others he/she is away), all the other actions won't change the state. Apart from this case, a user will be recognized as away if he/she switch windows/tabs or with no mouse move/key press for 30s(this time can be changed according to the demand), and as back if he/she switch back to this page or move the mouse/press a key. Whenever a user is recongized as away or comeback, the server will **emit a notice** to other users in this room, and the button on the right side of his/her entry in the member list will **change color** accordingly.
++ Always make the chat area **slide to bottom**.
 
 Instructions
 ----
