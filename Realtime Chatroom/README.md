@@ -12,28 +12,50 @@ The Chatroom has two kind of pages, some of the features are shown as follows:
 
 Features
 ------
+<<<<<<< HEAD
 + Navbar
   - The back to home button is the left side
   - Room name is shown in the middle
   - On the right side, a welcome message along with your nickname, which can be changed easily by just clicking the nickname, inputing your new nickname, and **clicking any other place** in the page to commit the change
+=======
++ Navbar 
+  - The back to home button is the left side
+  - Room name is shown in the middle
+  - On the right side, a welcome message along with your nickname, which can be changed easily by just clicking the nickname, inputing your new nickname, and **clicking any other place** in the page to commit the change 
+>>>>>>> origin/master
 + Sidebar
   - A count of total active member in this room
   - A green/red button which can click to actively change your state(online/away)
   - An connected member list, arranged by their most recent **active time** (active time will updated when a user join this room, change his/her nickname and send a message).
+<<<<<<< HEAD
   - The **last action and its time** of each active member. A typical action is a either a 'join this room'(or 'change nickname') or the first 24 letters of the most recent message.
   - The idle state of of each connected member.
 + Chat area
   - All the message sent in this room, each with the header, nickname and send time on the top and message body wrapped by the round box below.
   - **Different style** for the message sent by yourself(green, align right) and those send by others(cyan, align right)
   - Grey, italic style '**notice**' message send by the server whenever a user join, leave, change nickname. What's more magic and appealing is the 'typing' notice and 'away/come back' notice
+=======
+  - The **last action and its time** of each active member. A typical action is a either a 'join this room'(or 'change nickname') or the first 24 letters of the most recent message. 
+  - The idle state of of each connected member.
++ Chat area
+  - All the message sent in this room, each with the header, nickname and send time on the top and message body wrapped by the round box below.
+  - **Different style** for the message sent by yourself(green,align right) and those send by others(cyan,align right)
+  - Grey, italic style '**notice**' message send by the server whenever a user join,leave, change nickname. What's more magic and appealing is the 'typing' notice and 'away/come back' notice
+>>>>>>> origin/master
 + Send area
   - You can send message using either the send button or just press enter/return key.
 
 Highlights
 -----
+<<<<<<< HEAD
 + Using **socket id** instead of nickname to distinguish different user, so that different user with the same name can be correctly recognized in the member list and chat area.
 + **Live type notification**(_"??? is typing..."_). When a user type something, this notification will remain for one more second after the typing stopped and then disappeared. Upon typing again, the notice will appear again. Again, due to the socket id strategy， even if two users with same nickname typing simultaneously， it will correctly show two notices.
 + Implemented a complicated **idle time detect** mechanism. The **active state button** has the **highest priority**: when it's red(means the user clicks the button initiatively and wants to tell others he/she is away), all the other actions won't change the state. Apart from this case, a user will be recognized as away if he/she switch windows/tabs or with no mouse move/key press for 30s(this time can be changed according to the demand), and as back if he/she switch back to this page or move the mouse/press a key. Whenever a user is recognized as away or comeback, the server will **emit a notice** to other users in this room, and the button on the right side of his/her entry in the member list will **change color** accordingly.
+=======
++ Using **socketid** instead of nickname to distinguish different user, so that different user with the same name can be correctly recognized in the member list and chat area.
++ **Live type notification**(_"??? is typing..."_). When a user type something, this notification will remain for one more second after the typing stopped and then disappeared. Upon typing again, the notice will appear again. Again, due to the socketid strategy， even if two users with same nickname typing simultaneously， it will correctly show two notices.
++ Implemented a complcated **idle time detect** mechanism. The **active state button** has the **highest priority**: when it's red(means the user clicks the button initiatively and wants to tell others he/she is away), all the other actions won't change the state. Apart from this case, a user will be recognized as away if he/she switch windows/tabs or with no mouse move/key press for 30s(this time can be changed according to the demand), and as back if he/she switch back to this page or move the mouse/press a key. Whenever a user is recongized as away or comeback, the server will **emit a notice** to other users in this room, and the button on the right side of his/her entry in the member list will **change color** accordingly.
+>>>>>>> origin/master
 + Always make the chat area **slide to bottom**.
 
 Instructions
