@@ -4,6 +4,7 @@ var id
 var roomName = meta('roomName')
 var name = roomName.substr(0,8);
 var nickname
+
 var joined = false;
 var typeTimeout
 var typing = false;
@@ -53,11 +54,7 @@ $(document).ready(function(){
           $('#status').removeClass('online').addClass('away')
           isaway = true
         }
-
-
     })
-
-
     //switch tabs
       $(window).blur(function(){
         if(!isaway&&joined){
@@ -106,7 +103,7 @@ $(document).ready(function(){
         // display the new member list
         showmember(members)
     });
-
+    //handle notice message
     socket.on('broadcast',function(notice){
       var ul = $('#message')
       var li = $('<li></li>').text(' - - - '+notice+' - - - ').addClass('system text-center center-block')
@@ -146,7 +143,7 @@ $(document).ready(function(){
         id = content.id
         show(content.messages);
         $('li[name='+id+']').remove()
-        $('#membercount').text('Active member: '+($('#members li').length+1))
+        $('#membercount').text('Connected members: '+($('#members li').length+1))
         joined = true;
         console.log('entered');
     });
@@ -230,7 +227,7 @@ function showmember(members){
     }
     memberlist.prepend(li)
   })
-  $('#membercount').text('Active member: '+($('#members li').length+1))
+  $('#membercount').text('Connected member: '+($('#members li').length+1))
 }
 
 function sendMessage(event) {

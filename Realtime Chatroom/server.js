@@ -7,9 +7,6 @@ app.use(express.static(__dirname));
 // add socket.io
 var io = require('socket.io').listen(server);
 
-
-
-
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
@@ -64,19 +61,19 @@ io.sockets.on('connection', function(socket){
         // and each successive element is a room the socket is in,
         // So, to get the room name without adding another custom property,
         // you could do something like this:
-
         var roomName = Object.keys(io.sockets.adapter.sids[socket.id])[1];
         var now = new Date().getTime()
         insert(roomName,socket.nickname,message,now)
-        io.sockets.in(roomName).emit('message', socket.id,socket.nickname, message,now);
         // then send the message to users!
+        io.sockets.in(roomName).emit('message', socket.id,socket.nickname, message,now);
+
     });
 
     // this gets emitted if a user changes their nickname
     socket.on('nickname', function(nickname){
         socket.nickname = nickname;
         broadcast(socket,'nickname')
-        //broadcast update to room! (see below)
+        //broadcast update to room!
     });
 
     socket.on('typing',function(roomName){
@@ -139,7 +136,7 @@ function broadcast(socket,type) {
     } else if(type==='away'){
       socket.to(roomName).emit('broadcast',nickname+' is away')
     } else if(type==='focus'){
-      socket.to(roomName).emit('broadcast',nickname+' is online')
+      socket.to(roomName).emit('broadcast',nickname+' is back')
     } else{
       console.log('type error:'+type);
     }
